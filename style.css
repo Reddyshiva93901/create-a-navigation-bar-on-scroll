@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: -80px; /* Initially, set it above the viewport */
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000; /* Make sure the navbar is above other elements */
+    transition: top 0.3s ease; /* Add smooth transition effect */
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #555;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .show-navbar {
+    top: 0; /* Show the navbar when scrolling down */
+  }
+  
